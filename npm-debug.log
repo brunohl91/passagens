@@ -1,0 +1,272 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose readDependencies loading dependencies from /usr/share/zabbix/monitor/bot/passagens/package.json
+5 verbose install where, deps [ '/usr/share/zabbix/monitor/bot/passagens',
+5 verbose install   [ 'request', 'cheerio' ] ]
+6 verbose install where, peers [ '/usr/share/zabbix/monitor/bot/passagens', [] ]
+7 verbose installManyTop reading for lifecycle /usr/share/zabbix/monitor/bot/passagens/package.json
+8 info preinstall passagens@0.0.1
+9 verbose readDependencies loading dependencies from /usr/share/zabbix/monitor/bot/passagens/package.json
+10 silly cache add args [ 'request@^2.81.0', null ]
+11 verbose cache add spec request@^2.81.0
+12 silly cache add args [ 'cheerio@1.0.0', null ]
+13 verbose cache add spec cheerio@1.0.0
+14 silly cache add parsed spec Result {
+14 silly cache add   raw: 'request@^2.81.0',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'request',
+14 silly cache add   rawSpec: '^2.81.0',
+14 silly cache add   spec: '>=2.81.0 <3.0.0',
+14 silly cache add   type: 'range' }
+15 silly addNamed request@>=2.81.0 <3.0.0
+16 verbose addNamed ">=2.81.0 <3.0.0" is a valid semver range for request
+17 silly addNameRange { name: 'request', range: '>=2.81.0 <3.0.0', hasData: false }
+18 silly mapToRegistry name request
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/request
+22 verbose addNameRange registry:https://registry.npmjs.org/request not in flight; fetching
+23 silly cache add parsed spec Result {
+23 silly cache add   raw: 'cheerio@1.0.0',
+23 silly cache add   scope: null,
+23 silly cache add   name: 'cheerio',
+23 silly cache add   rawSpec: '1.0.0',
+23 silly cache add   spec: '1.0.0',
+23 silly cache add   type: 'version' }
+24 silly addNamed cheerio@1.0.0
+25 verbose addNamed "1.0.0" is a plain semver version for cheerio
+26 silly mapToRegistry name cheerio
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry uri https://registry.npmjs.org/cheerio
+30 verbose addNameVersion registry:https://registry.npmjs.org/cheerio not in flight; fetching
+31 verbose request uri https://registry.npmjs.org/cheerio
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 11:22:11
+34 verbose request id 2eb62a41e85eb854
+35 http request GET https://registry.npmjs.org/cheerio
+36 verbose request uri https://registry.npmjs.org/request
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 11:22:11
+39 verbose etag W/"59819573-37a38"
+40 verbose lastModified Wed, 02 Aug 2017 09:03:47 GMT
+41 http request GET https://registry.npmjs.org/request
+42 http 200 https://registry.npmjs.org/cheerio
+43 verbose headers { server: 'nginx/1.10.3',
+43 verbose headers   'content-type': 'application/json',
+43 verbose headers   'last-modified': 'Tue, 05 Sep 2017 07:43:55 GMT',
+43 verbose headers   etag: 'W/"59ae55bb-1a603"',
+43 verbose headers   'content-encoding': 'gzip',
+43 verbose headers   'cache-control': 'max-age=300',
+43 verbose headers   'content-length': '19195',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   date: 'Tue, 05 Sep 2017 14:22:10 GMT',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   age: '76',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'x-served-by': 'cache-gru17135-GRU',
+43 verbose headers   'x-cache': 'HIT',
+43 verbose headers   'x-cache-hits': '1',
+43 verbose headers   'x-timer': 'S1504621331.928315,VS0,VE0',
+43 verbose headers   vary: 'Accept-Encoding, Accept' }
+44 silly get cb [ 200,
+44 silly get   { server: 'nginx/1.10.3',
+44 silly get     'content-type': 'application/json',
+44 silly get     'last-modified': 'Tue, 05 Sep 2017 07:43:55 GMT',
+44 silly get     etag: 'W/"59ae55bb-1a603"',
+44 silly get     'content-encoding': 'gzip',
+44 silly get     'cache-control': 'max-age=300',
+44 silly get     'content-length': '19195',
+44 silly get     'accept-ranges': 'bytes',
+44 silly get     date: 'Tue, 05 Sep 2017 14:22:10 GMT',
+44 silly get     via: '1.1 varnish',
+44 silly get     age: '76',
+44 silly get     connection: 'keep-alive',
+44 silly get     'x-served-by': 'cache-gru17135-GRU',
+44 silly get     'x-cache': 'HIT',
+44 silly get     'x-cache-hits': '1',
+44 silly get     'x-timer': 'S1504621331.928315,VS0,VE0',
+44 silly get     vary: 'Accept-Encoding, Accept' } ]
+45 verbose get saving cheerio to /root/.npm/registry.npmjs.org/cheerio/.cache.json
+46 http 200 https://registry.npmjs.org/request
+47 verbose headers { server: 'nginx/1.10.3',
+47 verbose headers   'content-type': 'application/json',
+47 verbose headers   'last-modified': 'Tue, 05 Sep 2017 07:54:29 GMT',
+47 verbose headers   etag: 'W/"59ae5835-37c6a"',
+47 verbose headers   'content-encoding': 'gzip',
+47 verbose headers   'cache-control': 'max-age=300',
+47 verbose headers   'content-length': '35030',
+47 verbose headers   'accept-ranges': 'bytes',
+47 verbose headers   date: 'Tue, 05 Sep 2017 14:22:10 GMT',
+47 verbose headers   via: '1.1 varnish',
+47 verbose headers   age: '81',
+47 verbose headers   connection: 'keep-alive',
+47 verbose headers   'x-served-by': 'cache-gru17121-GRU',
+47 verbose headers   'x-cache': 'HIT',
+47 verbose headers   'x-cache-hits': '4',
+47 verbose headers   'x-timer': 'S1504621331.923713,VS0,VE0',
+47 verbose headers   vary: 'Accept-Encoding, Accept' }
+48 silly get cb [ 200,
+48 silly get   { server: 'nginx/1.10.3',
+48 silly get     'content-type': 'application/json',
+48 silly get     'last-modified': 'Tue, 05 Sep 2017 07:54:29 GMT',
+48 silly get     etag: 'W/"59ae5835-37c6a"',
+48 silly get     'content-encoding': 'gzip',
+48 silly get     'cache-control': 'max-age=300',
+48 silly get     'content-length': '35030',
+48 silly get     'accept-ranges': 'bytes',
+48 silly get     date: 'Tue, 05 Sep 2017 14:22:10 GMT',
+48 silly get     via: '1.1 varnish',
+48 silly get     age: '81',
+48 silly get     connection: 'keep-alive',
+48 silly get     'x-served-by': 'cache-gru17121-GRU',
+48 silly get     'x-cache': 'HIT',
+48 silly get     'x-cache-hits': '4',
+48 silly get     'x-timer': 'S1504621331.923713,VS0,VE0',
+48 silly get     vary: 'Accept-Encoding, Accept' } ]
+49 verbose get saving request to /root/.npm/registry.npmjs.org/request/.cache.json
+50 silly addNameRange number 2 { name: 'request', range: '>=2.81.0 <3.0.0', hasData: true }
+51 silly addNameRange versions [ 'request',
+51 silly addNameRange   [ '0.10.0',
+51 silly addNameRange     '0.8.3',
+51 silly addNameRange     '0.9.0',
+51 silly addNameRange     '0.9.1',
+51 silly addNameRange     '0.9.5',
+51 silly addNameRange     '1.0.0',
+51 silly addNameRange     '1.1.0',
+51 silly addNameRange     '1.1.1',
+51 silly addNameRange     '1.2.0',
+51 silly addNameRange     '1.9.0',
+51 silly addNameRange     '1.9.1',
+51 silly addNameRange     '1.9.2',
+51 silly addNameRange     '1.9.3',
+51 silly addNameRange     '1.9.5',
+51 silly addNameRange     '1.9.7',
+51 silly addNameRange     '1.9.8',
+51 silly addNameRange     '1.9.9',
+51 silly addNameRange     '2.0.0',
+51 silly addNameRange     '2.0.1',
+51 silly addNameRange     '2.0.2',
+51 silly addNameRange     '2.0.3',
+51 silly addNameRange     '2.0.4',
+51 silly addNameRange     '2.0.5',
+51 silly addNameRange     '2.1.0',
+51 silly addNameRange     '2.1.1',
+51 silly addNameRange     '2.2.0',
+51 silly addNameRange     '2.2.5',
+51 silly addNameRange     '2.2.6',
+51 silly addNameRange     '2.2.9',
+51 silly addNameRange     '2.9.0',
+51 silly addNameRange     '2.9.1',
+51 silly addNameRange     '2.9.2',
+51 silly addNameRange     '2.9.3',
+51 silly addNameRange     '2.9.100',
+51 silly addNameRange     '2.9.150',
+51 silly addNameRange     '2.9.151',
+51 silly addNameRange     '2.9.152',
+51 silly addNameRange     '2.9.153',
+51 silly addNameRange     '2.9.200',
+51 silly addNameRange     '2.9.201',
+51 silly addNameRange     '2.9.202',
+51 silly addNameRange     '2.9.203',
+51 silly addNameRange     '2.10.0',
+51 silly addNameRange     '2.11.0',
+51 silly addNameRange     '2.11.1',
+51 silly addNameRange     '2.11.2',
+51 silly addNameRange     '2.11.3',
+51 silly addNameRange     '2.11.4',
+51 silly addNameRange     '2.12.0',
+51 silly addNameRange     '2.14.0',
+51 silly addNameRange     '2.16.0',
+51 silly addNameRange     '2.16.2',
+51 silly addNameRange     '2.16.4',
+51 silly addNameRange     '2.16.6',
+51 silly addNameRange     '2.18.0',
+51 silly addNameRange     '2.19.0',
+51 silly addNameRange     '2.20.0',
+51 silly addNameRange     '2.21.0',
+51 silly addNameRange     '2.22.0',
+51 silly addNameRange     '2.23.0',
+51 silly addNameRange     '2.24.0',
+51 silly addNameRange     '2.25.0',
+51 silly addNameRange     '2.26.0',
+51 silly addNameRange     '2.27.0',
+51 silly addNameRange     '2.28.0',
+51 silly addNameRange     '2.29.0',
+51 silly addNameRange     '2.30.0',
+51 silly addNameRange     '2.31.0',
+51 silly addNameRange     '2.32.0',
+51 silly addNameRange     '2.33.0',
+51 silly addNameRange     '2.34.0',
+51 silly addNameRange     '2.35.0',
+51 silly addNameRange     '2.36.0',
+51 silly addNameRange     '2.37.0',
+51 silly addNameRange     '2.38.0',
+51 silly addNameRange     '2.39.0',
+51 silly addNameRange     '2.40.0',
+51 silly addNameRange     '2.41.0',
+51 silly addNameRange     '2.42.0',
+51 silly addNameRange     '2.43.0',
+51 silly addNameRange     '2.44.0',
+51 silly addNameRange     '2.45.0',
+51 silly addNameRange     '2.46.0',
+51 silly addNameRange     '2.47.0',
+51 silly addNameRange     '2.48.0',
+51 silly addNameRange     '2.49.0',
+51 silly addNameRange     '2.50.0',
+51 silly addNameRange     '2.51.0',
+51 silly addNameRange     '2.52.0',
+51 silly addNameRange     '2.53.0',
+51 silly addNameRange     '2.54.0',
+51 silly addNameRange     '2.55.0',
+51 silly addNameRange     '2.56.0',
+51 silly addNameRange     '2.57.0',
+51 silly addNameRange     '2.58.0',
+51 silly addNameRange     '2.59.0',
+51 silly addNameRange     '2.60.0',
+51 silly addNameRange     '2.61.0',
+51 silly addNameRange     '2.62.0',
+51 silly addNameRange     '2.63.0',
+51 silly addNameRange     '2.64.0',
+51 silly addNameRange     '2.65.0',
+51 silly addNameRange     '2.66.0',
+51 silly addNameRange     '2.67.0',
+51 silly addNameRange     '2.68.0',
+51 silly addNameRange     '2.69.0',
+51 silly addNameRange     '2.70.0',
+51 silly addNameRange     '2.71.0',
+51 silly addNameRange     '2.72.0',
+51 silly addNameRange     '2.73.0',
+51 silly addNameRange     '2.74.0',
+51 silly addNameRange     '2.75.0',
+51 silly addNameRange     '2.76.0',
+51 silly addNameRange     '2.77.0',
+51 silly addNameRange     '2.78.0',
+51 silly addNameRange     '2.79.0',
+51 silly addNameRange     '2.80.0',
+51 silly addNameRange     '2.81.0' ] ]
+52 silly addNamed request@2.81.0
+53 verbose addNamed "2.81.0" is a plain semver version for request
+54 silly cache afterAdd request@2.81.0
+55 verbose afterAdd /root/.npm/request/2.81.0/package/package.json not in flight; writing
+56 verbose afterAdd /root/.npm/request/2.81.0/package/package.json written
+57 verbose stack Error: version not found: cheerio@1.0.0
+57 verbose stack     at setData (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:137:12)
+57 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+57 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:17:25)
+57 verbose stack     at fixName (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:29:5)
+57 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
+57 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+57 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+58 verbose statusCode 404
+59 verbose cwd /usr/share/zabbix/monitor/bot/passagens
+60 error Linux 3.10.0-327.36.3.el7.x86_64
+61 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+62 error node v4.2.1
+63 error npm  v2.14.7
+64 error version not found: cheerio@1.0.0
+65 error If you need help, you may report this error at:
+65 error     <https://github.com/npm/npm/issues>
+66 verbose exit [ 1, true ]

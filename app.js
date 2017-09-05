@@ -1,4 +1,6 @@
 
+'use strict';
+
 /**
  * TODO:
  * - Cuidar custo
