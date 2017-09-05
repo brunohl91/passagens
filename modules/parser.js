@@ -39,31 +39,34 @@ var Parser = function () {
   }
 
   self.strategies = {
-    'http://passagensimperdiveis.com.br': function ( $ ) {
-      let post = $( '.title-h1' )[0];
-      let text = post.children[0].data;
-      let custoTmp = text.match( /\R\$\s[\d\.]{3,6}/i );
+    'http://passagensimperdiveis.com.br': function ( $, link ) {
+      var post = $( '.title-h1' )[0];
+      var text = post.children[0].data;
+      var custoTmp = text.match( /\R\$\s[\d\.]{3,6}/i );
       return {
+        'module': link,
         'link': post.attribs.href,
         'text': text,
         'custo': (custoTmp) ? self.convertMoney( custoTmp[0] ) : -1,
       }
     },
-    'http://melhoresdestinos.com.br': function ( $ ) {
-      let post = $( '.conteudo-topo-home a' )[0];
-      let text = post.children[0].children[0].data;
-      let custoTmp = text.match( /\R\$\s[\d\.]{3,6}/i );
+    'http://melhoresdestinos.com.br': function ( $, link ) {
+      var post = $( '.conteudo-topo-home a' )[0];
+      var text = post.children[0].children[0].data;
+      var custoTmp = text.match( /\R\$\s[\d\.]{3,6}/i );
       return {
+        'module': link,
         'link': post.attribs.href,
         'text': text,
         'custo': (custoTmp) ? self.convertMoney( custoTmp[0] ) : -1,
       }
     },
-    'http://viajandobaratopelomundo.com.br': function ( $ ) {
-      let post = $( 'h1.entry-title a' )[2];
-      let text = post.children[0].data;
-      let custoTmp = text.match( /\R\$[\s\d\.]{3,6}/i );
+    'http://viajandobaratopelomundo.com.br': function ( $, link ) {
+      var post = $( 'h1.entry-title a' )[2];
+      var text = post.children[0].data;
+      var custoTmp = text.match( /\R\$[\s\d\.]{3,6}/i );
       return {
+        'module': link,
         'link': post.attribs.href,
         'text': text,
         'custo': (custoTmp) ? self.convertMoney( custoTmp[0], 2 ) : -1,

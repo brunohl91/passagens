@@ -1,4 +1,6 @@
 
+'use strict';
+
 /**
  * TODO:
  * - Cuidar custo
@@ -9,26 +11,41 @@
 
 var parser = require('./modules/parser.js');
 
-var links = [
-  'http://passagensimperdiveis.com.br',
-  'http://melhoresdestinos.com.br',
-  'http://viajandobaratopelomundo.com.br',
+global.links = [
+  {
+    'last': '',
+    'link': 'http://passagensimperdiveis.com.br',
+  },
+  {
+    'last': '',
+    'link': 'http://melhoresdestinos.com.br',
+  },
+  {
+    'last': '',
+    'link': 'http://viajandobaratopelomundo.com.br',
+  },
 ]
 
 var promises = [
 ]
 
-for (var i = 0; i < links.length; i++) {
+for (var i = 0; i < global.links.length; i++) {
 
-  let link = links[i];
+  let link = global.links[i]['link'];
   promises.push( parser.parse( link ) );
 
 }
 
-Promise.all( promises )
-  .then(function(values) {
-    console.log(values);
-  })
-  .catch(function (err) {
-    console.log(err);
-  });
+function runPromises ( promises ) {
+
+  Promise.all( promises )
+    .then(function(values) {
+      console.log(values);
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+
+}
+
+runPromises( promises );
