@@ -5,7 +5,7 @@ var os = require("os");
 var Recorder = function () {
 
   var self = this;
-  self.path = 'record/';
+  self.path = 'database/';
 
   self.record = function ( name, data ) {
     return new Promise (function (resolve, reject) {

@@ -1,14 +1,14 @@
 
 'use strict';
 
-// oi
-
 /**
  * TODO:
  * - Cuidar custo
  * - Origens
  * - Destinos
  * - Entrar na página da Passagem?
+ *
+ * - Passagens imperdiveis não está pegando completo
  */
 
 var parser = require('./modules/parser.js');

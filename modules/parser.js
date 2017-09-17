@@ -31,7 +31,7 @@ var Parser = function () {
 
   self.decode = function ( $, strategy ) {
     if (typeof self.strategies[strategy] == "function") {
-      return self.strategies[strategy]( $ );
+      return self.strategies[strategy]( $, strategy );
     }
     else {
       return false;
@@ -41,7 +41,8 @@ var Parser = function () {
   self.strategies = {
     'http://passagensimperdiveis.com.br': function ( $, link ) {
       var post = $( '.title-h1' )[0];
-      var text = post.children[0].data;
+      // var text = post.children[0].data;
+      var text = self.getDataFromChildren( post.children );
       var custoTmp = text.match( /\R\$\s[\d\.]{3,6}/i );
       return {
         'module': link,
@@ -72,6 +73,15 @@ var Parser = function () {
         'custo': (custoTmp) ? self.convertMoney( custoTmp[0], 2 ) : -1,
       }
     },
+  }
+
+  self.getDataFromChildren = function ( children ) {
+    var text = "";
+    for (var p = 0; p < children.length; p++) {
+      var child = children[p];
+      text += (child.data) ? child.data : self.getDataFromChildren( child.children );
+    }
+    return text;
   }
 
   self.convertMoney = function ( money, exclude ) { // "R$ 1.274"
